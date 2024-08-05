@@ -4,11 +4,12 @@ body{
 }
 #container {
     display: flex;
-    height: 360px;
-    width: 360px;
+    height: 380px;
+    width: 380px;
     flex-wrap: wrap;
     padding: 0;
-    flex-basis: 360px;
+    flex-basis: 380px;
+    border: 0px;
     
 }
 .grid {
@@ -19,7 +20,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     border-style: solid;
-    border-width: 1px;
+    border-width: .1px;
     border-color: skyblue;
 }
 
