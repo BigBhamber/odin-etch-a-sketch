@@ -5,7 +5,7 @@ body{
 #container {
     display: flex;
     height: 380px;
-    width: 380px;
+    width: 3800px;
     flex-wrap: wrap;
     padding: 0;
     flex-basis: 380px;
@@ -15,7 +15,6 @@ body{
 .grid {
     height: 22.5px;
     width: 22.5px;
-    background-color: violet;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
