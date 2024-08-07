@@ -28,7 +28,35 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 45vh;
         
+}
+
+#button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    padding-bottom: 10px;
+    background-color: paleturquoise;
+    flex-direction: column;
+
+
+
+}
+#reset{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: palevioletred;
+    color: white;
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    color: palevioletred;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
 }
 
