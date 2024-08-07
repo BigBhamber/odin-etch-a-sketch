@@ -7,15 +7,23 @@ function genGrid(size) {
     const container = document.querySelector("#container");
 
     
-    for (let i = 0;i<size; i++){
-        for (let x = 0;x<size;x++){
+    for (let i = 0;i<(size*size); i++){
         const divbox = document.createElement("div");
         divbox.classList.add("grid")
         divbox.style.backgroundColor = "violet";
         divbox.addEventListener("mouseover",setColor)
         container.appendChild(divbox);
-        }
+        
     }
+    let newHeight = newWidth = 380 / size ;
+    const newDivs = document.querySelectorAll('.grid');
+    newDivs.forEach(element => {
+        element.style.height = newHeight.toString() + "px";
+        element.style.width = newWidth.toString() + "px";
+      
+    })
+
+    //adjust size of grid to fit new size.
 
 }
 function setColor(){
