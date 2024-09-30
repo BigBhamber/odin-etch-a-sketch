@@ -11,7 +11,9 @@ function genGrid(size) {
         const divbox = document.createElement("div");
         divbox.classList.add("grid")
         divbox.style.backgroundColor = "violet";
-        divbox.addEventListener("mouseover",setColor)
+        divbox.addEventListener("click",setColor)
+        
+
         container.appendChild(divbox);
         
     }
@@ -29,11 +31,20 @@ function genGrid(size) {
 function setColor(){
 
     //this function sets the color upon hover on a color.
-    let x = Math.floor(Math.random()*256);
-    let y = Math.floor(Math.random()*256);
-    let z = Math.floor(Math.random()*256);
-    let backgroundColor = "rgb("+x+","+y+","+z+")";
-    this.style.backgroundColor = backgroundColor
+
+    this.style.backgroundColor = "rgb(0,0,0)"
+
+}
+function hoverColor(){
+
+    //this function sets the color upon hover on a color.
+    this.style.backgroundColor = "rgb(216, 112, 147)";
+
+}
+function resetColor(){
+
+    //this function sets the color upon hover on a color.
+    this.style.backgroundColor = "rgb(238, 130, 238";
 
 }
 
